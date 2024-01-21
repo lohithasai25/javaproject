@@ -21,7 +21,7 @@ public class WaterChargeCalculator {
         double rateFirst100 = 2.00;
         double rateNext200 = 3.00;
         double rateAbove300 = 5.00;
-        double surchargeRate = 0.025; // 2.5%
+        double surchargeRate = 0.025; 
 
         double totalCharge = 0.0;
 
@@ -31,7 +31,7 @@ public class WaterChargeCalculator {
             totalCharge = 100 * rateFirst100 + (unitsConsumed - 100) * rateNext200;
         } else {
             totalCharge = 100 * rateFirst100 + 200 * rateNext200 + (unitsConsumed - 300) * rateAbove300;
-            // Apply surcharge for units above 300
+            
             totalCharge += totalCharge * surchargeRate;
         }
 

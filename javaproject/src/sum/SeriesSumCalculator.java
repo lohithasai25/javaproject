@@ -26,7 +26,7 @@ public class SeriesSumCalculator {
 
         while (currentTerm <= p) {
             sum += currentTerm;
-            currentTerm += 2.0; // Increment by 2.0 for the next term in the series
+            currentTerm += 2.0; 
         }
 
         return sum;

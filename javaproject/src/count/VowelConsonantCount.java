@@ -16,8 +16,9 @@ public class VowelConsonantCount {
         for (int i = 0; i < input.length(); i++) {
             char ch = input.charAt(i);
 
+            
             if (ch >= 'a' && ch <= 'z') {
-              
+                
                 if (isVowel(ch)) {
                     vowelCount++;
                 } else {
@@ -32,6 +33,7 @@ public class VowelConsonantCount {
         scanner.close();
     }
 
+    
     private static boolean isVowel(char ch) {
         return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u';
     }
